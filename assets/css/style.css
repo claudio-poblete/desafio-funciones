@@ -1,0 +1,55 @@
+body{
+  background-color: black;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.container, .box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  gap: 2rem;
+}
+
+.element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background-color: green;
+  width: 400px;
+  height: 200px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.element:hover{
+  transition: .4s ease-in-out;
+  transform: scale(1.1);
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+h2{
+  color: white;
+  font-weight: 600;
+  user-select: none;
+}
+
+.container-teclas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  gap: 2rem;
+}
