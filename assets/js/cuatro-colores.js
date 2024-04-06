@@ -8,23 +8,21 @@ boxDos.style.backgroundColor = 'red'
 boxTres.style.backgroundColor = 'green'
 boxCuatro.style.backgroundColor = 'yellow'
 
-const changeBlack = (element) =>{
-  element.style.backgroundColor = 'black'
-  element.style.border = '1px white solid'
-}
+const changeBlack = (element) => element.style.backgroundColor = 'black'
 
+const removeBlack = (element, color) => element.style.backgroundColor = color
 
 boxUno.addEventListener('click', () =>{
   if(boxUno.style.backgroundColor === 'black'){
-    boxUno.style.backgroundColor = 'blue'
-  }else{
+    removeBlack(boxUno,'blue')
+  }else
     changeBlack(boxUno)
   }
-})
+)
 
 boxDos.addEventListener('click', () =>{
   if(boxDos.style.backgroundColor === 'black'){
-    boxDos.style.backgroundColor = 'red'
+    removeBlack(boxDos,'red')
   }else{
     changeBlack(boxDos)
   }
@@ -32,7 +30,7 @@ boxDos.addEventListener('click', () =>{
 
 boxTres.addEventListener('click', () =>{
   if(boxTres.style.backgroundColor === 'black'){
-    boxTres.style.backgroundColor = 'green'
+    removeBlack(boxTres, 'green')
   }else{
     changeBlack(boxTres)
   }
@@ -40,7 +38,7 @@ boxTres.addEventListener('click', () =>{
 
 boxCuatro .addEventListener('click', () =>{
   if(boxCuatro.style.backgroundColor === 'black'){
-    boxCuatro.style.backgroundColor = 'yellow'
+    removeBlack(boxCuatro, 'yellow')
   }else{
     changeBlack(boxCuatro)
   }
