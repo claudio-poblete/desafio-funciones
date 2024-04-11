@@ -36,6 +36,7 @@ body{
   border-radius: 5px;
   cursor: pointer;
   border: 1px solid white;
+  align-items: center;
 }
 
 h2{
