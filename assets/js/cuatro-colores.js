@@ -1,7 +1,7 @@
-const boxUno = document.querySelector('#box-uno')
-const boxDos = document.querySelector('#box-dos')
-const boxTres = document.querySelector('#box-tres')
-const boxCuatro = document.querySelector('#box-cuatro')
+let boxUno = document.querySelector('#box-uno')
+let boxDos = document.querySelector('#box-dos')
+let boxTres = document.querySelector('#box-tres')
+let boxCuatro = document.querySelector('#box-cuatro')
 
 boxUno.style.backgroundColor = 'blue'
 boxDos.style.backgroundColor = 'red'
