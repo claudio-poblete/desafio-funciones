@@ -1,16 +1,15 @@
 const element = document.querySelector('#element')
 
-const changeColor = () => {
-  if(element.style.backgroundColor === 'yellow'){
-    element.style.backgroundColor = 'green'
-    element.style.color = 'white'
-  }else{
-    element.style.backgroundColor = 'yellow'
-    element.style.color = 'black'
-  }
-}
+element.style.backgroundColor = 'green'
 
-element.addEventListener ('click', () =>{
-  changeColor();
-})
+// Modifica la función para que reciba el elemento clickeado de forma de no
+// tener que seleccionarlo nuevamente dentro de la función
+const pintar = (elemento) => elemento.style.backgroundColor = 'yellow'
+element.addEventListener('click', () => pintar(element))
 
+
+// Modifica el código anterior para poder pasarle un color como argumento a la
+// función pintar. El color debe ser verde (green) por defecto, al hacer clic en el
+// párrafo se debe pasar amarillo como color
+const pint = (elemento, color) => elemento.style.backgroundColor = color
+element.addEventListener('click', () => pint(element, 'yellow'))
